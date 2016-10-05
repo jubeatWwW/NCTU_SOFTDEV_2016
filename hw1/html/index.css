@@ -10,6 +10,9 @@
 .app{
     width: 100%;
     height: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 section{
@@ -20,6 +23,22 @@ section{
 
 header{
     height: 10%;
+    width: 100%;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header:before{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header p {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .result{
@@ -58,16 +77,15 @@ header{
     width: 100%;
     height: 20%;
     display: inline-block;
-    padding-left: 30px;
 }
 
 .ctrl-buttons .row .wrapper{
     height: 70%;
-    width: 12%;
+    width: 13%;
     display: inline-block;
     box-shadow: 2px 2px grey;
     border-radius: 5px;
-    margin: 1%;
+    margin: 5px;
     background-color: #F0F0F0;
 }
 
