@@ -43,6 +43,8 @@ header p {
 
 .result{
     height: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
 }
 
 .result div{
@@ -63,10 +65,12 @@ header p {
 
 .monitor ul li{
     height: 25%;
+    padding-left: 10px;
 }
 
 .monitor ul li div{
-    display: inline;
+    display: inline-block;
+    width: 15%;
 }
 
 .ctrl-buttons{
@@ -77,15 +81,16 @@ header p {
     width: 100%;
     height: 20%;
     display: inline-block;
+    padding-left: 5px;
 }
 
 .ctrl-buttons .row .wrapper{
     height: 70%;
-    width: 13%;
+    width: 15.5%;
     display: inline-block;
     box-shadow: 2px 2px grey;
     border-radius: 5px;
-    margin: 5px;
+    margin: auto;
     background-color: #F0F0F0;
 }
 
