@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 40vw;
+    height: 80vh;
+}
+
+.app{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section{
+    display: block;
+    clear: both;
+    width: 100%;
+    color: white;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header:before{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header p {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.result{
+    height: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
+.result div{
+    position: relative;
+    float: right;
+}
+
+.monitor{
+    height: 20%;
+}
+
+.monitor ul{
+    list-style-type: none;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.monitor ul li{
+    height: 25%;
+    padding-left: 10px;
+}
+
+.monitor ul li div{
+    display: inline-block;
+    width: 15%;
+}
+
+.ctrl-buttons{
+    height: 60%;
+}
+
+.ctrl-buttons .row{
+    width: 100%;
+    height: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.ctrl-buttons .row .wrapper{
+    height: 70%;
+    width: 15.5%;
+    display: inline-block;
+    box-shadow: 2px 2px white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: auto;
+    background-color: black;
+}
+
+.ctrl-buttons .row .wrapper:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.ctrl-buttons .row .wrapper .content{
+    margin: auto;
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
