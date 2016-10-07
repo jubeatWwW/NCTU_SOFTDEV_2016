@@ -8,9 +8,10 @@
 }
 
 .app{
+    background-color: black;
     width: 100%;
     height: 100%;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 10px;
     padding: 10px;
 }
@@ -19,6 +20,7 @@ section{
     display: block;
     clear: both;
     width: 100%;
+    color: white;
 }
 
 header{
@@ -39,6 +41,7 @@ header:before{
 header p {
     font-size: 25px;
     font-weight: bold;
+    color: white;
 }
 
 .result{
@@ -88,10 +91,11 @@ header p {
     height: 70%;
     width: 15.5%;
     display: inline-block;
-    box-shadow: 2px 2px grey;
+    box-shadow: 2px 2px white;
+    border: 1px solid white;
     border-radius: 5px;
     margin: auto;
-    background-color: #F0F0F0;
+    background-color: black;
 }
 
 .ctrl-buttons .row .wrapper:before{
