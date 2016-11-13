@@ -1,15 +1,25 @@
 import React from 'react';
 import {render} from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-//import '../css/index.scss';
+import CalcBtns from './component/CalcBtns';
+import BaseBtns from './component/BaseBtns';
+
+injectTapEventPlugin();
+
+import '../css/index.scss';
 
 class App extends React.Component {
     render() {
         return (
-            <div>
-                <h1>It Works!</h1>
-            </div>
-                );
+            <MuiThemeProvider>
+                <div>
+                    <BaseBtns />
+                    <CalcBtns />
+                </div>
+            </MuiThemeProvider>
+        );
     }
 
 
