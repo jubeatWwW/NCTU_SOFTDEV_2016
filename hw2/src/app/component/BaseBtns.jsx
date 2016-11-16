@@ -24,8 +24,25 @@ export default class BaseBtn extends React.Component {
     }
 
     handleClick(base){
-        console.log(base);
         this.setState({base});
+        this.props.onClick(base);
+    }
+
+    changeBase(base){
+        switch(base){
+            case 'HEX':
+                return this.props.baseNum.toString(16);
+                break;
+            case 'DEC':
+                return this.props.baseNum.toString(10);
+                break;
+            case 'OCT':
+                return this.props.baseNum.toString(8);
+                break;
+            case 'BIN':
+                return this.props.baseNum.toString(2);
+                break;
+        }
     }
 
     render(){
@@ -40,7 +57,7 @@ export default class BaseBtn extends React.Component {
                                     onClick={this.handleClick.bind(this, base)}
                                     style={style}/>
                                 <Paper zDepth={1} style={{position: "relative", height: "40px", width: "380px"}}>
-                                    <RaisedButton label={this.state.number} fullWidth={true}
+                                    <RaisedButton label={this.changeBase(base)} fullWidth={true}
                                         onClick={this.handleClick.bind(this, base)}/>
                                 </Paper>
                             </div>
