@@ -35,3 +35,21 @@ QUnit.test("simple mod test", function(assert){
     });
 });
 
+
+QUnit.test("function key test", function(assert){
+    let data = ["55667 bs + 1 ce + 1 * 10 - 10"];
+    let ans  = [5566];
+    ClickTrigger.datasetTest(data, ans, assert);
+});
+
+
+QUnit.test("c test", function(assert){
+    let done = assert.async();
+    ClickTrigger.eval("c");
+    setTimeout(()=>{
+        let result = $('.display .value').html();
+        assert.ok(result == 0, "Passed!");
+        done();
+    });
+});
+

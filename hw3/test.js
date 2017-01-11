@@ -4,7 +4,7 @@ QUnit.test( "hello test", function( assert ) {
   assert.ok( 1 == "1", "Passed!" );
 });
 
-QUnit.test("eval1", function(assert){
+QUnit.test("eval", function(assert){
     let data = [
         ['val', '1'],
         ['oper', 'add'],
@@ -15,4 +15,15 @@ QUnit.test("eval1", function(assert){
 });
 
 
+QUnit.test("56不能亡", function(assert){
+    let data = [
+        ['val', '55'],
+        ['oper', 'mul'],
+        ['val', '100'],
+        ['oper', 'add'],
+        ['val', '66']
+    ];
+    let result = evaluate(data);
+    assert.ok( 5566 == result, "Passed!" );
+});
 
