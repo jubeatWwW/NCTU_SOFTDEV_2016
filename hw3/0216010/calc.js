@@ -138,3 +138,4 @@ var Calc = function () {
   return Calc;
 }();
 
+module.exports = evaluate;
