@@ -1,0 +1,21 @@
+{
+  "name": "hw3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ClickTest.js",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "blanket": "^1.2.3",
+    "qunit": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "qunit -c ./0216010/calc.js -t ./offTest.js",
+    "babel": "babel --presets es2015 ./0216010/main.js > ./0216010/main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
