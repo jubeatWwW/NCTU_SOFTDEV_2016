@@ -9,9 +9,13 @@
         <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
-        <script src="./0216010/calc.js"></script>
-        <script src="./0216010/main.js"></script>
+        <script src="https://code.jquery.com/qunit/qunit-2.0.1.js"></script>
+        <script src="./node_modules/blanket/dist/qunit/blanket.min.js"></script>
+        <script src="./0216010/calc.js" data-cover></script>
+        <script src="./0216010/main.js" data-cover></script>
         <script src="./ClickTrigger.js"></script>
+        <script src="test.js"></script>
+        <script src="ClickTest.js"></script>
     </head>
     <body>
         <div id="qunit"></div>
@@ -89,9 +93,6 @@
         </div>
         <div class="help-btn">？</div>
 
-        <script src="https://code.jquery.com/qunit/qunit-2.0.1.js"></script>
-        <script src="test.js"></script>
-        <script src="ClickTest.js"></script>
     </body>
 </html>
 
